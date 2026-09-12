@@ -1,0 +1,10 @@
+services:
+  dataforge:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      # Leave ACCESS_CODE unset for local/offline play. Set it if you
+      # ever expose this on a public network — see README.md.
+      - ACCESS_CODE=
+    restart: unless-stopped

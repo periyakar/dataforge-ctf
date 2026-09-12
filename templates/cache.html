@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index of /cache/</title>
+  <style>
+    body { font-family: monospace; background: #fff; color: #222; padding: 2rem; }
+    h1 { font-size: 1rem; font-weight: normal; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 0.15rem 0; }
+    a { color: #1155cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Index of /cache/</h1>
+  <ul>
+    {% for entry in entries %}
+    <li>&#128193; <a href="#">{{ entry }}/</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

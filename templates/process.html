@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dataset Processing — DataForge Registry</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f1116; color: #d8dae0;
+           display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+    .card { background: #1b1e27; padding: 2rem; border-radius: 10px; width: 380px; }
+    h1 { color: #fff; font-size: 1.1rem; }
+    p { color: #9aa0ad; font-size: 0.85rem; }
+    input[type=file] { margin: 1rem 0; color: #d8dae0; }
+    button { padding: 0.5rem 1rem; background: #3b5bfd; color: #fff; border: none;
+             border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Dataset Processing Pipeline</h1>
+    <p>Upload a dataset file for preprocessing. Accepts the internal
+       serialized dataset format.</p>
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="dataset" required>
+      <br>
+      <button type="submit">Process</button>
+    </form>
+  </div>
+</body>
+</html>
